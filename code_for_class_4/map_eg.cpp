@@ -33,4 +33,9 @@ int main()
     print_map(m);
  
     m.clear(); //clear the contents
+     // Display the map
+    std::cout << "the map after clearing the contents \n";
+    print_map(m);
+
+    return 0;
 }
