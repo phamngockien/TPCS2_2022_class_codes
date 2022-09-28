@@ -34,6 +34,7 @@ bool run_all_test(){
    //Finally, print if all test are passed or not
    (all_passed) ? std::cout<<"all tests are passed \n" : std::cout<<"there is a failure in our tests! \n";
 
+   return all_passed;
 }
 
 
