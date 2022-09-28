@@ -1,6 +1,6 @@
 #include<iostream>
 
-int multiple(const int &x, 
+unsigned int multiple(const int &x, 
                     const int &y) 
 {
   return x*y;
