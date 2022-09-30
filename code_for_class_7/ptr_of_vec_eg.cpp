@@ -13,8 +13,8 @@ int main () {
 
    // print the address and values of the second integer stored in vec
    std::cout << "Address and value of the second element: ";
-   //std::cout << &vec_ptr->at(1)  <<", " << vec_ptr->at(1)  << std::endl;
-   std::cout << *vec_ptr[1] << std::endl;
+   std::cout << &vec_ptr->at(1)  <<", " << vec_ptr->at(1)  << std::endl;
+   //std::cout << *vec_ptr[1] << std::endl; // This line has a compilation error.
 
 
    return 0;
