@@ -11,7 +11,7 @@ double* calc(int res_size, int max) // leaks memory
     */
 
     // To fix memory leak
-    //delete[] p; //we don't need that memory anymore: free it
+    delete[] p; //we don't need that memory anymore: free it
 
     return res;
 }
@@ -23,7 +23,7 @@ int main()
     double* r = calc(100,1000);
 
     // To fix memory leak
-    //delete[] r; //we don't need that memory anymore: free it
+    delete[] r; //we don't need that memory anymore: free it
     
     return 0;
 }
