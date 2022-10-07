@@ -4,9 +4,11 @@
 class Box {
    public:
       static int objectCount;
-      
+
+      static void print(){}
+  
       // Constructor definition
-      Box(double l = 2.0, double b = 2.0, double h = 2.0) {
+      Box(double l = 2.0 , double b = 2.0, double h = 2.0) {
          length = l;
          breadth = b;
          height = h;
@@ -29,7 +31,11 @@ class Box {
 // Initialize static member of class Box
 int Box::objectCount = 0;  //access by the scope resolution operator (::)
 
+
+
 int main(void) {
+   Box::print();
+   
    Box Box1;    // Initialize box1
    Box Box2(8.5, 6.0, 2.0);    // Initialize box2
    // Print total number of objects.
