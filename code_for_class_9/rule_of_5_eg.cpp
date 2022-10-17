@@ -69,6 +69,7 @@ public:
       std::cout<< "Move operator= called\n";
       return *this;
    }
+   
 
    //f + g; cause an r-value to be created
    Foo operator+(const Foo& rhs)
@@ -108,7 +109,7 @@ private:
 
 int main()
 {
-   Foo f(10000);
+   Foo f(100000);
 
    //Initialize the data for f
    for (unsigned int i = 0; i < 5; ++i)
