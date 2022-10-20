@@ -4,6 +4,7 @@ struct Thing {
     int a = 0; //default value is zero
 
     mutable int num_calls = 0;
+    int num_calls = 0;
     
     Thing(int val) { a = val; }; //Constructor
 

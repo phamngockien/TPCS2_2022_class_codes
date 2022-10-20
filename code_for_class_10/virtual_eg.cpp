@@ -18,8 +18,9 @@ public:
 class Derived:public Base
 {
 public:
-    //print () is already virtual function in derived class, we could also declared as virtual void print () explicitly
-    void print () 
+    //print () is already virtual function in derived class, 
+    // we could also declared as virtual void print () explicitly
+    virtual void print () 
     { std::cout<< "print derived class\n"; }
    
     void show ()

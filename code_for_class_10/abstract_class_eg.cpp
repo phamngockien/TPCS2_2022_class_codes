@@ -44,6 +44,10 @@ int main()
     Base *ptr=new Derived(6,7);
     ptr->fun();
     delete ptr;
+
+    //Object of abstract class is not allowed
+    //Base *ptr_b = new Base(1);
+
     
     return 0;
 }
