@@ -1,0 +1,4 @@
+Hello
+This is an example of writing to a new file.
+The example is simple.
+You may want to try reading an input file to some input parameters of type int, double, etc
