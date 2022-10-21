@@ -7,14 +7,19 @@ protected:
     int x;
 
 public:
-    //abstract function
-    virtual void fun() = 0;
-
     Base(int i) 
     {
         x = i;
         std::cout<<"Constructor of Base called\n";
     }
+
+   
+    //abstract function
+    virtual void fun() const = 0;
+
+
+    virtual void print() const = 0;
+   
 };
  
 class Derived: public Base
@@ -32,7 +37,12 @@ public:
     
     //This function will overide the abstract function in Base
     //As we define it, the Derived class is not an abstract class
-    void fun() { std::cout << "x = " << x << ", y = " << y<<'\n'; }
+    void fun() const { std::cout << "x = " << x << ", y = " << y<<'\n'; }
+
+    void print() const
+    {
+      std::cout<<"The print function of Derived class called\n";   
+    }
 };
  
 int main()
